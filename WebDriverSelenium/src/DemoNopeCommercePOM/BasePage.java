@@ -12,13 +12,13 @@ public class BasePage {
 
     public static WebDriver driver = new FirefoxDriver();
 
-
+    //This will open the browser
     public static void openBrowser(){
         driver.get("http://demo.nopcommerce.com/");
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
     }
-
+    //This will close the browser
     public static void closeBrowser(){
         driver.quit();
     }
